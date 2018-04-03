@@ -14,7 +14,7 @@ export default class App extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     store.dispatch(changeVideo(exampleVideoData[0]));
     store.dispatch(changeVideoList(exampleVideoData));
   }
@@ -24,7 +24,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav handleSearchInputChange={this.getYouTubeVideos.bind(this)}/>
+        <Nav />
         <div className="row">
           <div className="col-md-7">
             <VideoPlayerContainer />

@@ -1,6 +1,6 @@
 import React from 'react';
  
-const Search = ({handleSearchInputChange}) =>
+const Search = ({handleSearchInputChange}) => {
   return (
     <div className="search-bar form-inline">
       <input
@@ -13,6 +13,6 @@ const Search = ({handleSearchInputChange}) =>
       </button>
     </div>
   );
-}
+};
 
 export default Search;
