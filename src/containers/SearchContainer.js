@@ -2,9 +2,6 @@ import React from 'react';
 import Search from './../components/Search.js';
 import { connect } from 'react-redux';
 import handleSearchChange from '../actions/search.js';
-var SearchContainer = () => {
-  return <Search />;
-};
 
 const mapStateToProps = (state) => {
   return {
@@ -15,7 +12,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleSearchInputChange: dispatch(handleSearchChange)
+    handleSearchInputChange: input => dispatch(handleSearchChange(input))
   };
 };
 
