@@ -2,7 +2,9 @@ import React from 'react';
 import Search from './../components/Search.js';
 import { connect } from 'react-redux';
 import handleSearchChange from '../actions/search.js';
-var SearchContainer = () => {};
+var SearchContainer = () => {
+  return <Search />
+};
 
 //TODO: define a SearchContainer component which will hook up your action
 // dispatchers with your search component props.

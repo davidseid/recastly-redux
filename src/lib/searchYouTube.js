@@ -12,7 +12,8 @@ var searchYouTube = ({key, query, max = 5}, callback) => {
         callback(items);
       }
     })
-    .fail(({responseJSON}) => {
+    .fail((response) => {
+      console.log(response);
       responseJSON.error.errors.forEach((err) =>
         console.error(err)
       );
